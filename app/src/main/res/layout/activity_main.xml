@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/note"
+        android:textSize="20sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01) Please Check Log Cat For Hash Keys e.g\n MainActivity: HashKey: HI+rAcLnxet\n\nShare hash key with your server and initiate a OTP request to your server and start SMS read listener through SMS Retriever API.  \n\n02)Your server will send SMS including OTP/Hash Key your app only able to read this SMS due to the hash key identity.
+        \n\n Note: If your server is not ready yet you can send the formatted message using any phone and start listening from your app you can easily read it. \n\nSMS Retriever API will do SMS reading for you. :)\n\n\n\n\n Happy Coding :)"
+        tools:ignore="HardcodedText" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/otpRetrieved"
+        android:layout_height="wrap_content"
+        android:text="Your otp is not fetched"
+        android:layout_gravity="center"
+        android:textSize="20sp" />
+</LinearLayout>
