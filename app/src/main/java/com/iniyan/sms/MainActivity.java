@@ -1,12 +1,15 @@
 package com.iniyan.sms;
 
+import android.annotation.SuppressLint;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import com.google.android.gms.auth.api.phone.SmsRetriever;
 import com.google.android.gms.auth.api.phone.SmsRetrieverClient;
@@ -21,11 +24,15 @@ public class MainActivity extends AppCompatActivity implements
 
     private SMSReceiver smsReceiver;
 
+    TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+        textView = findViewById(R.id.otpRetrieved);
         AppSignatureHashHelper appSignatureHashHelper = new AppSignatureHashHelper(this);
 
         // This code requires one time to get Hash keys do comment and share key
@@ -71,10 +78,12 @@ public class MainActivity extends AppCompatActivity implements
     }
 
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onOTPReceived(String otp) {
         showToast("OTP Received: " + otp);
         Log.i(TAG,"otp received \n "+otp);
+        textView.setText("your otp is "+otp);
         if (smsReceiver != null) {
             unregisterReceiver(smsReceiver);
             smsReceiver = null;
