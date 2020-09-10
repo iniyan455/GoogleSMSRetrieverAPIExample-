@@ -18,11 +18,11 @@ Must # start with and content ends with app signature hashcode use release hashc
 
 
 ## Solution
-<img src="./screens/sms_retriever_api.png" width=“400”/>
+<img src="./app/src/main/assests/app_view.png" width=“400”/>
 
 
 ## Info
-<img src="./screens/app_view.png" width="200"/>
+<img src="./app/src/main/assests/sms_retriever_api.png" width="200"/>
 
 
 ## Work flow
