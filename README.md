@@ -156,3 +156,11 @@ In next few steps you will see how to create hash keys.
 ## Credits
 [Google's official doc](https://developers.google.com/identity/sms-retriever/overview) ,
 [Chintan Desai's (Repo/Kotlin)](https://github.com/chintandesai49/SMSRetrieverAPIDemo)
+
+https://www.twilio.com/console - Twilio Account 
+POST - Method 
+localhost:8084/api/v1/sms
+request twilio test : - 
+{"phoneNumber":"+919894591XXX",
+"message":"<#> Your TestApp code is: 989898 fTYQT22HN8e"
+}

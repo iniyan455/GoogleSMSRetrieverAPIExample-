@@ -52,6 +52,7 @@ class MainActivity : AppCompatActivity(), OTPReceiveListener {
         showToast("OTP Received: $otp")
         Log.i(TAG, "otp received \n $otp")
         otpRetrieved.text= "otp received -> $otp "
+        // <#> Your TestApp code is: 989898 fTYQT22HN8e
         if (smsReceiver != null) {
             unregisterReceiver(smsReceiver)
             smsReceiver = null
