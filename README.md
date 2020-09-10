@@ -14,15 +14,13 @@ Must # start with and content ends with app signature hashcode use release hashc
 
 ## Alert - this app will be impacted by a policy change. This app will be impacted by a change in the Google Play policy governing the use of SMS and CALL_LOG permissions. Apps that are not compliant may be removed from Google Play on Jan 9th, 2019.
 
-<img src="./screens/googles_warning.png" width=“400”/>
-
 
 ## Solution
-<img src="./screens/sms_retriever_api.png" width=“400”/>
+<img src="./app/src/main/assests/sms_retriever_api.png" width=“400”/>
 
 
 ## Info
-<img src="./screens/app_view.png" width="200"/>
+<img src="./app/src/main/assests/app_view.png" width="200"/>
 
 
 ## Work flow
